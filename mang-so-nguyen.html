@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = parseInt(prompt('Nhâp số lượng số nguyên trong bảng'))
+    let array = []
+    for (let i = 0; i<length; i++){
+        array[i] = parseInt(prompt('Nhập các phần tử của mảng'))
+    }
+    let number = parseInt(prompt('Nhập một số để kiểm tra'))
+    let count = 0
+    let check = false
+    for (let i = 0; i< array.length; i++){
+        if(number === array[i]){
+            check = true
+            alert('Số ' + number + ' thuộc mảng, nằm ở vị trí '+ i )
+        }
+    }
+    if (check != true){
+        alert('Số '+ number + ' không tồn tại trong mảng')
+    }
+    for (let i = 0; i< array.length; i++){
+        if(number === array[i]) {
+            count ++
+        }
+    }alert('Có '+ count+ ' sô' + number+ ' trong mảng')
+</script>
+</body>
+</html>
